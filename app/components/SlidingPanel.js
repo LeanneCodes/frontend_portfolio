@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import WorkContent from './WorkContent';
+import AboutContent from './AboutContent';
+import ContactContent from './ContactContent';
 
 export default function SlidingPanel({ content, closePanel }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,9 +29,9 @@ export default function SlidingPanel({ content, closePanel }) {
         <button onClick={handleClose} className="text-xl">✖</button>
       </div>
       <div className="p-8">
-        {content === 'work' && <div>Work Content</div>}
-        {content === 'about' && <div>About Content</div>}
-        {content === 'contact' && <div>Contact Content</div>}
+        {content === 'work' && <WorkContent />}
+        {content === 'about' && <AboutContent />}
+        {content === 'contact' && <ContactContent />}
       </div>
     </div>
   );
