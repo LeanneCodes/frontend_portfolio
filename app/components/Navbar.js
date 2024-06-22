@@ -16,24 +16,24 @@ export default function Navbar() {
           ☰
         </button>
       </div>
-      <nav className={`${isOpen ? 'block' : 'hidden'} md:flex md:flex-col md:items-center md:justify-center md:h-full`}>
-        <ul className="flex flex-col justify-center items-center h-full md:space-y-8 space-y-4">
-          <li className="py-2 md:py-0">
-            <a href="#work" className="md:transform md:rotate-90 md:origin-right hover:text-white">Work</a>
+      <nav className={`${isOpen ? 'block' : 'hidden'} md:flex md:flex-col md:items-center md:justify-between md:h-full`}>
+        <ul className="flex flex-col justify-evenly items-center h-full space-y-4 md:space-y-0">
+          <li className="md:transform md:rotate-90">
+            <a href="#work" className="hover:text-white">Work</a>
           </li>
-          <li className="py-2 md:py-0">
-            <a href="#about" className="md:transform md:rotate-90 md:origin-right hover:text-white">About</a>
+          <li className="md:transform md:rotate-90">
+            <a href="#about" className="hover:text-white">About</a>
           </li>
-          <li className="py-2 md:py-0">
-            <a href="#contact" className="md:transform md:rotate-90 md:origin-right hover:text-white">Contact</a>
+          <li className="md:transform md:rotate-90">
+            <a href="#contact" className="hover:text-white">Contact</a>
           </li>
         </ul>
-        <ul className="flex flex-col justify-center items-center md:mt-auto md:mb-4 space-y-4">
+        <ul className="flex flex-col items-center space-y-4 pb-4 md:pb-8">
           <li>
-            <a href="#" className="md:transform md:rotate-90 md:origin-right hover:text-white">fb</a>
+            <a href="#" className="hover:text-white">fb</a>
           </li>
           <li>
-            <a href="#" className="md:transform md:rotate-90 md:origin-right hover:text-white">ig</a>
+            <a href="#" className="hover:text-white">ig</a>
           </li>
         </ul>
       </nav>
