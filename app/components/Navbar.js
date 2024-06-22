@@ -6,8 +6,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed right-0 top-0 h-full bg-yellow-400 text-black w-full md:w-16">
-      <div className="flex justify-between items-center p-4 md:hidden">
+    <div className="fixed right-0 top-0 h-full text-black w-full md:w-16 z-10">
+      <div className="flex justify-between items-center p-4 bg-yellow-400 md:hidden">
         <span className="text-xl font-bold">Studio Bagaz'</span>
         <button
           className="text-xl"
@@ -16,7 +16,7 @@ export default function Navbar() {
           ☰
         </button>
       </div>
-      <nav className={`${isOpen ? 'block' : 'hidden'} md:flex md:flex-col md:items-center md:justify-between md:h-full`}>
+      <nav className={`bg-yellow-400 ${isOpen ? 'block' : 'hidden'} md:flex md:flex-col md:items-center md:justify-between md:h-full`}>
         <ul className="flex flex-col justify-evenly items-center h-full space-y-4 md:space-y-0">
           <li className="md:transform md:rotate-90">
             <a href="#work" className="hover:text-white">Work</a>
