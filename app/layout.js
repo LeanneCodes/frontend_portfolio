@@ -1,17 +1,13 @@
-"use client";
-
-import { ThemeProvider } from 'styled-components';
-import GlobalStyles from '@styles/GlobalStyles';
-import theme from '@styles/theme';
+import './globals.css';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body>
-        <ThemeProvider theme={theme}>
-          <GlobalStyles />
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
