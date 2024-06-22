@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Navbar({ setPanelContent }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,10 +38,14 @@ export default function Navbar({ setPanelContent }) {
           </ul>
           <ul className="flex flex-col items-center space-y-4 pb-4">
             <li>
-              <a href="#" className="hover:text-white">fb</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                <FaGithub size={24} />
+              </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">ig</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                <FaLinkedin size={24} />
+              </a>
             </li>
           </ul>
         </nav>
@@ -61,10 +66,14 @@ export default function Navbar({ setPanelContent }) {
         </ul>
         <ul className="flex flex-col items-center space-y-4 pb-8">
           <li>
-            <a href="#" className="hover:text-white">fb</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaGithub size={24} />
+            </a>
           </li>
           <li>
-            <a href="#" className="hover:text-white">ig</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaLinkedin size={24} />
+            </a>
           </li>
         </ul>
       </nav>
