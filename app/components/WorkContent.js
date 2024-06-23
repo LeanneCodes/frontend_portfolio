@@ -31,11 +31,11 @@ export default function WorkContent() {
       liveLink: 'https://budget-tracker-react-project.netlify.app/',
     },
     {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-      title: 'World Taste',
+      image: '/globalgrubhub.png', // Replace with actual image URLs
+      title: 'Global Grub Hub',
       description: 'Top recipes from popular cuisines around the world fetched dynamically using an API.',
-      githubLink: 'https://github.com/leannegoldsmith/project-three',
-      liveLink: 'https://project-three.live',
+      githubLink: 'https://github.com/LeanneCodes/global-grub-hub',
+      liveLink: 'https://global-grub-hub.vercel.app/',
     },
     {
       image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
