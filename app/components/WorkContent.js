@@ -3,37 +3,37 @@ import ProjectCard from './ProjectCard';
 export default function WorkContent() {
   const projects = [
     {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-      title: 'Project One',
-      description: 'Description of project one.',
-      githubLink: 'https://github.com/leannegoldsmith/project-one',
-      liveLink: 'https://project-one.live',
+      image: '/gamesync.png', // Replace with actual image URLs
+      title: 'GameSync',
+      description: 'Streamlining gaming session scheduling with friends via an intuitive platform, leveraging RAWG API data.',
+      githubLink: 'https://github.com/visualriot/Gaming-scheduler',
+      liveLink: 'https://gamesync-game-session-scheduler.netlify.app/',
+    },
+    {
+      image: '/oysterbeyond.png', // Replace with actual image URLs
+      title: 'Oyster & Beyond Blog',
+      description: 'A travel blog that showcases a variety of destinations and an option for users to leave comments.',
+      githubLink: 'https://github.com/LeanneCodes/oyster-and-beyond-blog',
+      liveLink: 'https://oyster-and-beyond-blog.vercel.app/',
+    },
+    {
+      image: '/vaultkey.png', // Replace with actual image URLs
+      title: 'VaultKey Password Generator',
+      description: 'A password generator that intakes user input and forms a password between 8 and 128 characters.',
+      githubLink: 'https://github.com/LeanneCodes/vault-key-generator',
+      liveLink: 'https://leannecodes.github.io/vault-key-generator/',
+    },
+    {
+      image: '/budgettracker.png', // Replace with actual image URLs
+      title: 'Budget Tracker',
+      description: 'A website that allows users to track their expenditure and see available funds.',
+      githubLink: 'https://github.com/LeanneCodes/budget-tracker',
+      liveLink: 'https://budget-tracker-react-project.netlify.app/',
     },
     {
       image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-      title: 'Project Two',
-      description: 'Description of project two.',
-      githubLink: 'https://github.com/leannegoldsmith/project-two',
-      liveLink: 'https://project-two.live',
-    },
-    {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-      title: 'Project Three',
-      description: 'Description of project three.',
-      githubLink: 'https://github.com/leannegoldsmith/project-three',
-      liveLink: 'https://project-three.live',
-    },
-    {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-      title: 'Project Two',
-      description: 'Description of project two.',
-      githubLink: 'https://github.com/leannegoldsmith/project-two',
-      liveLink: 'https://project-two.live',
-    },
-    {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-      title: 'Project Three',
-      description: 'Description of project three.',
+      title: 'World Taste',
+      description: 'Top recipes from popular cuisines around the world fetched dynamically using an API.',
       githubLink: 'https://github.com/leannegoldsmith/project-three',
       liveLink: 'https://project-three.live',
     },

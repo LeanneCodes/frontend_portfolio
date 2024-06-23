@@ -10,7 +10,7 @@ export default function Footer() {
       </div>
       <div className="w-1/2 bg-whitesmoke text-red-600 text-center py-4">
         <p className="font-bold">
-          All Rights Reserved.
+        Crafting Code with Passion
         </p>
       </div>
     </footer>

@@ -15,7 +15,7 @@ export default function Navbar({ setPanelContent }) {
       {/* Mobile Navbar */}
       <div className="bg-yellow-400 md:hidden">
         <div className="flex justify-between items-center p-4">
-          <h4 className="text-xl font-bold">Leanne Goldsmith</h4>
+          <h4 className="text-xl font-bold">Frontend Portfolio</h4>
           <button
             className="text-xl"
             onClick={() => setIsOpen(!isOpen)}
