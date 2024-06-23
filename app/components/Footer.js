@@ -1,10 +1,18 @@
 export default function Footer() {
-    return (
-      <footer className="bg-red-600 text-white text-center py-4">
-        <p className="font-bold">
-          &copy; Leanne Goldsmith. All Rights Reserved.
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="flex">
+      <div className="w-1/2 bg-red-600 text-whitesmoke text-center py-4">
+        <p className="font-bold text-whitesmoke">
+          &copy; {currentYear} Leanne Goldsmith.
         </p>
-      </footer>
-    );
-  }
-  
+      </div>
+      <div className="w-1/2 bg-whitesmoke text-red-600 text-center py-4">
+        <p className="font-bold">
+          All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
