@@ -8,7 +8,6 @@ export default function Navbar({ setPanelContent }) {
 
   const handleLinkClick = (content) => {
     setPanelContent(content);
-    setIsOpen(false);
   };
 
   return (
