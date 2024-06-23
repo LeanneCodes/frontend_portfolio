@@ -27,7 +27,7 @@ export default function Layout({ children }) {
   };
 
   return (
-    <div className="relative flex flex-col min-h-screen font-sans">
+    <div className="relative flex flex-col min-h-screen font-sans z-0">
       <Navbar setPanelContent={setPanelContent} />
       <main className="flex-1 md:pr-16 bg-purple-500 text-white text-center flex items-center justify-center flex-col">
         <motion.h1
@@ -59,7 +59,7 @@ export default function Layout({ children }) {
           animate="visible"
           variants={animationVariants}
           onClick={handleButtonClick}
-          className="mt-6 text-lg md:text-xl text-white bg-orange-500 hover:bg-orange-700 py-2 px-4 rounded"
+          className="mt-6 text-lg md:text-xl text-white bg-orange-500 hover:bg-orange-700 py-2 px-4 rounded z-10"
         >
           View My CV
         </motion.button>
