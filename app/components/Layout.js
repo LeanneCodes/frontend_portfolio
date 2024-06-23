@@ -22,15 +22,19 @@ export default function Layout({ children }) {
     },
   };
 
+  const handleButtonClick = () => {
+    window.open('/LeanneGoldsmith_CV.pdf', '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <div className="relative flex flex-col min-h-screen">
+    <div className="relative flex flex-col min-h-screen font-sans">
       <Navbar setPanelContent={setPanelContent} />
       <main className="flex-1 md:pr-16 bg-purple-500 text-white text-center flex items-center justify-center flex-col">
         <motion.h1
           initial="hidden"
           animate="visible"
           variants={animationVariants}
-          className="text-4xl md:text-6xl font-bold"
+          className="text-6xl md:text-6xl font-bold"
         >
           Hi! I'm Leanne
         </motion.h1>
@@ -48,19 +52,17 @@ export default function Layout({ children }) {
           variants={animationVariants}
           className="text-4xl md:text-4xl mt-4"
         >
-          a frontend developer turning ideas into engaging digital experiences!
+          A frontend developer turning ideas into engaging digital experiences!
         </motion.p>
-        <motion.a
+        <motion.button
           initial="hidden"
           animate="visible"
           variants={animationVariants}
-          href="/LeanneGoldsmith_CV.pdf"
-          className="mt-6 text-lg md:text-xl text-white underline"
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={handleButtonClick}
+          className="mt-6 text-lg md:text-xl text-white bg-orange-500 hover:bg-orange-700 py-2 px-4 rounded"
         >
           View My CV
-        </motion.a>
+        </motion.button>
       </main>
       {panelContent && (
         <SlidingPanel content={panelContent} closePanel={closePanel} />

@@ -36,10 +36,10 @@ export default function Navbar({ setPanelContent }) {
             </li>
           </ul>
           <div className="flex justify-center space-x-4 pb-5">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="https://github.com/LeanneCodes" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="https://www.linkedin.com/in/leanne-m-goldsmith/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <FaLinkedin size={24} />
             </a>
           </div>
@@ -60,10 +60,10 @@ export default function Navbar({ setPanelContent }) {
           </li>
         </ul>
         <div className="flex flex-col items-center space-y-4 pb-8">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+          <a href="https://github.com/LeanneCodes" target="_blank" rel="noopener noreferrer" className="hover:text-white">
             <FaGithub size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+          <a href="https://www.linkedin.com/in/leanne-m-goldsmith/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
             <FaLinkedin size={24} />
           </a>
         </div>

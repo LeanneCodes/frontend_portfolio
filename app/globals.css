@@ -4,10 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Poiret One', sans-serif;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Suez One', serif;
+}
+
+body {
+  @apply font-sans;
+}
+
+.font-sans {
+  font-family: Arial, Helvetica, sans-serif;
 }
