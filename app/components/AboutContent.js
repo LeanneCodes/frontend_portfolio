@@ -19,7 +19,7 @@ export default function AboutContent() {
       {/* Introduction */}
       <div className="mb-8 text-white text-center">
         <p>
-          Hi, I'm Leanne Goldsmith. I specialised in Addressable Advertising,
+          Hi, I'm Leanne Goldsmith. In my career, I specialised in Addressable Advertising,
           coding display ad banners for clients like Eurostar, Audible, Jameson,
           and Legoland. I love turning Adobe XD, Figma, and Photoshop designs
           into live ads using HTML, CSS, JavaScript, and Greensock. In my spare
@@ -29,16 +29,14 @@ export default function AboutContent() {
           className='text-white underline font-bold'
           href='https://www.credential.net/abe70729-0419-4049-a752-62b032d231eb#gs.ao1xri'
           target='_blank' rel='noopener noreferrer'>
-            Fullstack Diploma
-          </a>
-          and another in <a
+            Fullstack Diploma</a> and another in <a
           className='text-white underline font-bold'
           href='https://skillsbootcamp.credential.getsmarter.com/bc3bb14e-0986-4109-a16a-e1f9c5af4378#gs.ao1x8n'
           target='_blank' rel='noopener noreferrer'>
             Frontend Development
           </a>.
-          Now, in my full-time Frontend Developer role, I'm seeking new challenges
-          by collaborating with hardworking people and contributing to fun and innovative projects.
+          Now, I'm seeking new challenges by collaborating with hardworking people and
+          contributing to fun and innovative projects.
         </p>
       </div>
 

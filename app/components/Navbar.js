@@ -26,13 +26,13 @@ export default function Navbar({ setPanelContent }) {
         <nav className={`${isOpen ? 'block bg-yellow-400' : 'hidden'}`}>
           <ul className="flex flex-col items-center mb-4">
             <li className="mb-4">
-              <button onClick={() => handleLinkClick('work')} className="hover:text-white">Work</button>
+              <button onClick={() => handleLinkClick('work')} className="hover:text-white text-xl">Work</button>
             </li>
             <li className="mb-4">
-              <button onClick={() => handleLinkClick('about')} className="hover:text-white">About</button>
+              <button onClick={() => handleLinkClick('about')} className="hover:text-white text-xl">About</button>
             </li>
             <li className="mb-4">
-              <button onClick={() => handleLinkClick('contact')} className="hover:text-white">Contact</button>
+              <button onClick={() => handleLinkClick('contact')} className="hover:text-white text-xl">Contact</button>
             </li>
           </ul>
           <div className="flex justify-center space-x-4 pb-5">
@@ -50,13 +50,13 @@ export default function Navbar({ setPanelContent }) {
       <nav className="hidden md:flex md:flex-col md:items-center md:justify-between md:h-full bg-yellow-400">
         <ul className="flex flex-col justify-evenly items-center h-full space-y-0">
           <li className="md:transform md:rotate-90">
-            <button onClick={() => handleLinkClick('work')} className="hover:text-white">Work</button>
+            <button onClick={() => handleLinkClick('work')} className="hover:text-white text-2xl">Work</button>
           </li>
           <li className="md:transform md:rotate-90">
-            <button onClick={() => handleLinkClick('about')} className="hover:text-white">About</button>
+            <button onClick={() => handleLinkClick('about')} className="hover:text-white text-2xl">About</button>
           </li>
           <li className="md:transform md:rotate-90">
-            <button onClick={() => handleLinkClick('contact')} className="hover:text-white">Contact</button>
+            <button onClick={() => handleLinkClick('contact')} className="hover:text-white text-2xl">Contact</button>
           </li>
         </ul>
         <div className="flex flex-col items-center space-y-4 pb-8">
