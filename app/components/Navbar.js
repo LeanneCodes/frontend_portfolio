@@ -16,7 +16,7 @@ export default function Navbar({ setPanelContent }) {
       {/* Mobile Navbar */}
       <div className="bg-yellow-400 md:hidden">
         <div className="flex justify-between items-center p-4">
-          <span className="text-xl font-bold">Studio Bagaz'</span>
+          <h4 className="text-xl font-bold">Leanne Goldsmith</h4>
           <button
             className="text-xl"
             onClick={() => setIsOpen(!isOpen)}
@@ -25,29 +25,25 @@ export default function Navbar({ setPanelContent }) {
           </button>
         </div>
         <nav className={`${isOpen ? 'block bg-yellow-400' : 'hidden'}`}>
-          <ul className="flex flex-col justify-evenly items-center h-full space-y-4">
-            <li>
+          <ul className="flex flex-col items-center mb-4">
+            <li className="mb-4">
               <button onClick={() => handleLinkClick('work')} className="hover:text-white">Work</button>
             </li>
-            <li>
+            <li className="mb-4">
               <button onClick={() => handleLinkClick('about')} className="hover:text-white">About</button>
             </li>
-            <li>
+            <li className="mb-4">
               <button onClick={() => handleLinkClick('contact')} className="hover:text-white">Contact</button>
             </li>
           </ul>
-          <ul className="flex flex-col items-center space-y-4 pb-4">
-            <li>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                <FaGithub size={24} />
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                <FaLinkedin size={24} />
-              </a>
-            </li>
-          </ul>
+          <div className="flex justify-center space-x-4 pb-5">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaGithub size={24} />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
         </nav>
       </div>
 
@@ -64,18 +60,14 @@ export default function Navbar({ setPanelContent }) {
             <button onClick={() => handleLinkClick('contact')} className="hover:text-white">Contact</button>
           </li>
         </ul>
-        <ul className="flex flex-col items-center space-y-4 pb-8">
-          <li>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-              <FaGithub size={24} />
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-              <FaLinkedin size={24} />
-            </a>
-          </li>
-        </ul>
+        <div className="flex flex-col items-center space-y-4 pb-8">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <FaGithub size={24} />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <FaLinkedin size={24} />
+          </a>
+        </div>
       </nav>
     </div>
   );
