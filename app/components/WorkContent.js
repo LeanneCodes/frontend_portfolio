@@ -24,13 +24,6 @@ export default function WorkContent() {
       liveLink: 'https://leannecodes.github.io/vault-key-generator/',
     },
     {
-      image: '/budgettracker.png', // Replace with actual image URLs
-      title: 'Budget Tracker',
-      description: 'A website that allows users to track their expenditure and see available funds.',
-      githubLink: 'https://github.com/LeanneCodes/budget-tracker',
-      liveLink: 'https://budget-tracker-react-project.netlify.app/',
-    },
-    {
       image: '/globalgrubhub.png', // Replace with actual image URLs
       title: 'Global Grub Hub',
       description: 'Top recipes from popular cuisines around the world fetched dynamically using an API.',
@@ -38,17 +31,24 @@ export default function WorkContent() {
       liveLink: 'https://global-grub-hub.vercel.app/',
     },
     {
-      image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-      title: 'Project Three',
-      description: 'Description of project three.',
-      githubLink: 'https://github.com/leannegoldsmith/project-three',
-      liveLink: 'https://project-three.live',
+      image: '/adbanners.png', // Replace with actual image URLs
+      title: 'Display Ad Banners',
+      description: 'A selection of display ad banners that I have created for multiple clients using HTML, CSS, JavaScript, and Greensock.',
+      githubLink: 'https://github.com/LeanneCodes/banner-demo',
+      liveLink: 'https://banner-ads.netlify.app/',
+    },
+    {
+      image: '/budgettracker.png', // Replace with actual image URLs
+      title: 'Budget Tracker',
+      description: 'A website that allows users to track their expenditure and see available funds.',
+      githubLink: 'https://github.com/LeanneCodes/budget-tracker',
+      liveLink: 'https://budget-tracker-react-project.netlify.app/',
     },
     // Add more projects as needed
   ];
 
   return (
-    <div>
+    <div className="w-full">
       <h2 className="text-2xl font-bold mb-10 w-full text-center">Work</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {projects.map((project, index) => (
@@ -59,6 +59,7 @@ export default function WorkContent() {
             description={project.description}
             githubLink={project.githubLink}
             liveLink={project.liveLink}
+            className="w-full"
           />
         ))}
       </div>
